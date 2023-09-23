@@ -1,1 +1,1 @@
-#MyToolSuite.github.io
+MyToolSuite
