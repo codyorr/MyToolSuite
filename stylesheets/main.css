@@ -5,6 +5,9 @@ body {
 
 
 
+
+
+/* styles the header */
 header {
     position: relative;
     background-color: rgb(10, 100, 10);
@@ -12,6 +15,8 @@ header {
     height: 75px;
     margin-bottom: 8px;
 }
+
+/* styles the title on top */
 header h1 {
     color: rgb(150,150,150);
     font-family: 'Times New Roman', Times, serif;
@@ -22,8 +27,12 @@ header h1 {
 
 
 
+
+
+
+/* styles the nav menu */
 #nav-container {
-    width:24%;
+    width:24%;/* resrved space on the X axis for when the "nav" element is in a fixed positoni. */
 }
 nav {
     position:fixed;
@@ -40,6 +49,9 @@ nav ul li {
     margin-top: 10px;
     margin-bottom: 2px;
 }
+
+
+/* styles the nav anchors to look more like buttons */
 nav ul li a {
     display: block;
     position:relative;
@@ -53,20 +65,26 @@ nav ul li a {
     font-weight: bold;
     font-size: 22px;
 }
+
+
+
+/* styles the current page link in the nav menu. */
 #selected-nav-link {
     color: rgb(150,150,150);
     background-color: rgb(8,80,8);
     border-radius: 0px;
 }
+
+
+/* restyles the nav anchors on :hover */
 nav ul li a:hover {
     background-color: rgb(8,80,8);
     color: rgb(150,150,150);
-    border-radius: 0px;
-
 }
 
 
 
+/* adds an animated line on hovered nav links */
 nav ul li a::before {
     content: "";
     position: absolute;
@@ -80,16 +98,29 @@ nav ul li a::before {
     transition: transform 0.3s ease;
 }
 nav ul li a:hover::before {
+    height: 4px;
     transform: scaleX(1);
     transform-origin: top left;
+    border-radius: 4px;
 }
+
+
+
+/* make the line permanent for the current page link on the nav menu */
 #selected-nav-link::before {
+    height: 4px;
     transform: scaleX(1);
     background-color: rgb(20,120,20);
 }
 
 
 
+
+
+
+
+
+/* styles the main element */
 main {
     position: relative;
     width: 76%;
@@ -97,9 +128,15 @@ main {
     background-color: rgb(50,50,50);
     margin-left: 10px;
     border-radius: 4px;
-
+    overflow-y: auto;
 }
 
+
+
+
+
+
+/* styles the footer */
 footer {
     color:rgb(150,150,150);
     text-align: center;
