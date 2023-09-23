@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+
+<!-- Cody Orr : 9/22/2023-->
+
+
+
+<!-- html tag-->
+<html lang="en">
+    <!-- head tag containing charset, metadata, title and styles-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tools List</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+
+        <!-- Internal CSS -->
+        <style>
+            main h2 { /* Tool List title */
+                color: rgb(150,150,150);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 28px;
+                text-align: center;
+            }
+
+            @media (max-width: 850px) {
+                main h2 {
+                    visibility: hidden;
+                }
+            }
+
+            label[for="search-bar"] {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 150px;
+                height:25px;
+                color: rgb(150,150,150);
+                text-align: center;
+            }
+
+            #search-bar {
+                position: absolute;
+                background-color: rgb(150,150,150);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                right: 0;
+                top: 25px;
+                width: 150px;
+                height: 25px;
+            }
+
+            #search-button {
+                position: absolute;
+                background-color: rgb(150,150,150);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                right: 160px;
+                top: 28px; 
+                width: 75px;
+                height: 25px;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+                overflow-y: auto;
+                max-height: 80vh;
+            }
+
+            .box {
+                position: relative;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                color: rgb(150,150,150);
+                border: 2px solid rgb(0,0,0);
+                border-radius: 4px;
+                margin-left: 5px;
+                margin-right: 5px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 90%;
+            }
+
+            .box img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1/1; /* stay sqaured */
+            } 
+        </style>
+    </head>
+
+    <!-- body containing header, nav, main and footer tags -->
+    <body>
+        <!-- Header title -->
+        <header>
+            <h1>MyToolSuite</h1>
+        </header>
+
+        <!-- a flexbox used to align nav and main elements. -->
+        <div style="display:flex;">
+            <!-- perserve the nav position within the flexbox above -->
+            <div id="nav-container">
+                <!-- navigation menu -->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html"><img src="./media/home-icon.png" width="16" height="16" alt="icon"> Home</a></li>
+                        <li><a id="selected-nav-link" href="#"><img src="./media/microchip-icon.png" width="16" height="16" alt="icon"> Tools</a></li>
+                        <li><a href="./about.html"><img src="./media/info-icon.png" width="16" height="16" alt="icon"> About</a></li>
+                        <li><a href="./contact.html"><img src="./media/attherate-icon.png" width="16" height="16" alt="icon"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- main content of the page -->
+            <main>
+                <h2>List of Tools</h2>
+
+                <label for="search-bar">Search:</label>
+                <input id="search-bar" type="text" placeholder="Find a tool...">
+                <button id="search-button">find</button>
+
+                <div class="container">
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                    <a href="#" class="box">
+                        <img src="./media/info-icon.png" alt="Image Description">
+                        <p>template</p>
+                    </a>
+                </div>
+            </main>
+        </div>
+        
+        <!-- footer with name, context and date. -->
+        <footer>
+            <br>Cody Orr<br>
+            CSC104<br>
+            2023<br>
+        </footer>
+    </body>
+</html>

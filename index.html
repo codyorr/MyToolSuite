@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<!-- Cody Orr : 9/22/2023-->
+
+
+
+<!-- html tag-->
+<html lang="en">
+    <!-- head tag containing charset, metadata, title and styles-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+
+        <!-- Internal CSS -->
+        <style>
+            main h2 {/* announcement text */
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 28px;
+                color:rgb(150,150,150);
+            }
+
+            #post {
+                border: 1px solid #000000;
+                padding: 15px;
+                margin: 15px;
+                height: 84%;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            #post-banner {
+                position: relative;
+                left:50%;
+                width: 50%;
+                transform: translateX(-50%);
+            }
+            #post-title {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 28px;
+                color: rgb(150,150,150);
+            }
+            #post-author {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 12px;
+                color:darkorange;
+            }
+            #post-text {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                color:rgb(150,150,150);
+            }
+        </style>
+    </head>
+
+    <!-- body containing header, nav, main and footer tags -->
+    <body>
+        <!-- Header title -->
+        <header>
+            <h1>MyToolSuite</h1>
+        </header>
+
+        <!-- a flexbox used to align nav and main elements. -->
+        <div style="display:flex;">
+            <!-- perserve the nav position within the flexbox above  -->
+            <div id="nav-container">
+                <!-- navigation -->
+                <nav>
+                    <ul>
+                        <li><a id="selected-nav-link" href="#"><img src="./media/home-icon.png" width="16" height="16" alt="icon"> Home</a></li>
+                        <li><a href="./tools.html"><img src="./media/microchip-icon.png" width="16" height="16" alt="icon"> Tools</a></li>
+                        <li><a href="./about.html"><img src="./media/info-icon.png" width="16" height="16" alt="icon"> About</a></li>
+                        <li><a href="./contact.html"><img src="./media/attherate-icon.png" width="16" height="16" alt="icon"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- main content of the page -->
+            <main>
+                <h2>Announcements</h2>
+                <!-- A post can be better handled with javascript, but i'll just make a template for now. -->
+                <article id="post">
+                    <img id="post-banner"src="./media/green-background-by-svstudioart-on-FreePik.png" width="240" height="120" alt="post-banner">
+                    <h3 id="post-title">Welcome to the site!</h3>
+                    <p id="post-author"><strong>Author:</strong> Cody Orr - 9/22/2023</p>
+                    <br>
+                    <p id="post-text">
+                        Hello and welcome to the site, soon this will be used to host tools that will be developed overtime.
+                    </p>
+                </article>
+
+            </main>
+        </div>
+        
+        <!-- footer with name and date. -->
+        <footer>
+            <br>Cody Orr<br>
+            CSC104<br>
+            2023<br>
+        </footer>
+    </body>
+</html>

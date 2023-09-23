@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+
+<!-- Cody Orr : 9/22/2023-->
+
+
+
+<!-- html tag-->
+<html lang="en">
+    <!-- head tag containing charset, metadata, title and styles-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+
+        <!-- Internal CSS -->
+        <style>
+            main h2 { /* About title */
+                color: rgb(150,150,150);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 28px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <!-- body containing header, nav, main and footer tags -->
+    <body>
+        <!--Header title-->
+        <header>
+            <h1>MyToolSuite</h1>
+        </header>
+
+        <!-- a flexbox used to align nav and main elements. -->
+        <div style="display:flex;">
+            <!-- perserve the nav position within the flexbox above -->
+            <div id="nav-container">
+                <!--navigation menu-->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html"><img src="./media/home-icon.png" width="16" height="16" alt="icon"> Home</a></li>
+                        <li><a href="./tools.html"><img src="./media/microchip-icon.png" width="16" height="16" alt="icon"> Tools</a></li>
+                        <li><a id="selected-nav-link" href="#"><img src="./media/info-icon.png" width="16" height="16" alt="icon"> About</a></li>
+                        <li><a href="./contact.html"><img src="./media/attherate-icon.png" width="16" height="16" alt="icon"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--main content of the page-->
+            <main>
+                <h2>About</h2>
+                <br>
+                <p style="text-align: center; color:rgb(150,150,150); margin-left:10px; margin-right:10px;">
+                    The goal of this website is to host various tools for universal access, this will only be for personal use for now although it'll stay public.
+                </p>
+            </main>
+        </div>
+        
+        <!--footer with name, context and date.-->
+        <footer>
+            <br>Cody Orr<br>
+            CSC104<br>
+            2023<br>
+        </footer>
+    </body>
+</html>

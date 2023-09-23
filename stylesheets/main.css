@@ -1,0 +1,108 @@
+body {
+    background-color: black;
+    background-image: url("../media/Tile.png");
+}
+
+
+
+header {
+    position: relative;
+    background-color: rgb(10, 100, 10);
+    border-radius: 4px;
+    height: 75px;
+    margin-bottom: 8px;
+}
+header h1 {
+    color: rgb(150,150,150);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+}
+
+
+
+#nav-container {
+    width:24%;
+}
+nav {
+    position:fixed;
+    width: 24%;
+    height: 230px;
+    background-color: rgb(50,50,50);
+    border-radius: 4px;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+nav ul li a {
+    display: block;
+    position:relative;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: rgb(10,100,10);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+#selected-nav-link {
+    color: rgb(150,150,150);
+    background-color: rgb(8,80,8);
+    border-radius: 0px;
+}
+nav ul li a:hover {
+    background-color: rgb(8,80,8);
+    color: rgb(150,150,150);
+    border-radius: 0px;
+
+}
+
+
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;  
+    height: 2px;
+    bottom: 0;
+    left: 0; 
+    background-color: rgb(20,120,20);
+    transform: scaleX(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease;
+}
+nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: top left;
+}
+#selected-nav-link::before {
+    transform: scaleX(1);
+    background-color: rgb(20,120,20);
+}
+
+
+
+main {
+    position: relative;
+    width: 76%;
+    height: 800px;
+    background-color: rgb(50,50,50);
+    margin-left: 10px;
+    border-radius: 4px;
+
+}
+
+footer {
+    color:rgb(150,150,150);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

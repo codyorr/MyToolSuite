@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+
+<!-- Cody Orr : 9/22/2023-->
+
+
+
+<!-- html tag-->
+<html lang="en">
+    <!-- head tag containing charset, metadata, title and styles-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./stylesheets/main.css">
+
+        <!-- Internal CSS -->
+        <style>
+           main {
+                color: rgb(150,150,150);
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+            .report-container {
+                text-align: center;
+            }
+            .report-template {
+                text-align: left;
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <!-- body containing header, nav, main and footer tags -->
+    <body>
+        <!--Header title-->
+        <header>
+            <h1>MyToolSuite</h1>
+        </header>
+
+        <!-- a flexbox used to align nav and main elements. -->
+        <div style="display:flex;">
+            <!-- perserve the nav position within the flexbox above -->
+            <div id="nav-container">
+                <!--navigation menu-->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html"><img src="./media/home-icon.png" width="16" height="16" alt="icon"> Home</a></li>
+                        <li><a href="./tools.html"><img src="./media/microchip-icon.png" width="16" height="16" alt="icon"> Tools</a></li>
+                        <li><a href="./about.html"><img src="./media/info-icon.png" width="16" height="16" alt="icon"> About</a></li>
+                        <li><a id="selected-nav-link" href="#"><img src="./media/attherate-icon.png" width="16" height="16" alt="icon"> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- main content of the page -->
+            <main>
+                <h2>Contact Information</h2>
+
+                <br>
+
+                <h4>Email:</h4>
+                <p style="color:darkorange;">codyorr.contact@gmail.com</p>
+
+                <br>
+                <br>
+
+                <div class="report-container">
+                    <h2>How to Report Issues</h2>
+                    <p>If you've found a bug or want to suggest a feature, here's how you can help:</p>
+
+                    <br>
+
+                    <h3>Step 1: Check Existing Issues</h3>
+                    <p>Before you create a new issue, please check if someone else has reported the same issue. This avoids duplicates and speeds up resolution.</p>
+                    <h3>Step 2: Create a New Issue</h3>
+                    <p>If your issue is unique, go ahead and create a new issue on the <a href="https://github.com/codyorr/MyToolSuite.github.io/issues">GitHub repo</a>.</p>
+                    <h3>Step 3: Explain the New Issue</h3>
+                    <p>Here is an optional template for you to fill out in the "Leave a comment" section</p>
+                    
+                    <br>
+
+                    <ul class="report-template">
+                        <li>Title - Short and descriptive.</li>
+                        <li>Description - Detailed explanation of the issue.</li>
+                        <li>Steps to Reproduce - Step-by-step guide to reproduce the bug.</li>
+                        <li>Expected Behavior - What you expected to happen.</li>
+                        <li>Actual Behavior - What actually happened.</li>
+                        <li>Screenshots - If applicable.</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+        
+        <!-- footer with name, context and date. -->
+        <footer>
+            <br>Cody Orr<br>
+            CSC104<br>
+            2023<br>
+        </footer>
+    </body>
+</html>
