@@ -1,7 +1,7 @@
 MyToolSuite - A personal website to host various tools that can run on the browser.
 
 
-All pages will have the same, Header, Nav, Main and Footer elements. (with unique content being placed into the Main element)
+All pages will have the same Header, Nav, Main and Footer elements. (with unique content being placed into the Main element)
 
 
 Index.html - the Home page which consists of Announcements area.
