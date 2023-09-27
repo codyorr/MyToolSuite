@@ -5,6 +5,6 @@ All pages will have the same Header, Nav, Main and Footer elements. (with unique
 
 
 - `Index.html`: The Home page featuring an Announcements area.
+- `Tools.html`: Contains a list of tools; clicking one redirects you to its corresponding page.
 - `About.html`: A page with a simple description of the site.
 - `Contact`: Page with Contact information and how to submit issues/bugs.
-- `Tools.html`: Contains a list of tools; clicking one redirects you to its corresponding page.
