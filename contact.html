@@ -22,12 +22,64 @@
                 font-family: 'Times New Roman', Times, serif;
                 text-align: center;
             }
-            .report-container {
-                text-align: center;
+
+            #email-template {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
-            .report-template {
-                text-align: left;
-                display: inline-block;
+
+            #title {
+                width: 50%;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+            #description {
+                width:50%;
+                height: 200px;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+            
+            #submit {
+                display: block;
+                position:relative;
+                margin-top: 10px;
+                padding: 10px 20px;
+                border-radius: 4px;
+                background-color: rgb(10, 100, 10);
+                color: rgb(0, 0, 0);
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+                font-size: 22px;
+                border: none; 
+                cursor: pointer;
+            }
+
+            #submit:hover {
+                background-color: rgb(8,80,8);
+                color: rgb(150,150,150);
+            }
+
+            #submit::before {
+                content: "";
+                position: absolute;
+                width: 100%;  
+                height: 2px;
+                bottom: 0;
+                left: 0; 
+                background-color: rgb(20,120,20);
+                transform: scaleX(0);
+                transform-origin: top right;
+                transition: transform 0.3s ease;
+            }
+
+            #submit:hover::before {
+                height: 4px;
+                transform: scaleX(1);
+                transform-origin: top left;
+                border-radius: 4px;
             }
         </style>
     </head>
@@ -57,36 +109,19 @@
             <!-- main content of the page -->
             <main>
                 <h2>Contact Information</h2>
-                <h4>Email:</h4>
                 <p style="color:darkorange;">codyorr.contact@gmail.com</p>
 
                 <br>
                 <br>
 
-                <div class="report-container">
-                    <h2>How to Report Issues</h2>
-                    <p>If you've found a bug or want to suggest a feature, here's how you can help:</p>
-
-                    <br>
-
-                    <h3>Step 1: Check Existing Issues</h3>
-                    <p>Before you create a new issue, please check if someone else has reported the same issue. This avoids duplicates and speeds up resolution.</p>
-                    <h3>Step 2: Create a New Issue</h3>
-                    <p>If your issue is unique, go ahead and create a new issue on the <a href="https://github.com/codyorr/MyToolSuite.github.io/issues">GitHub repo</a>.</p>
-                    <h3>Step 3: Explain the New Issue</h3>
-                    <p>Here is an optional template for you to fill out in the "Leave a comment" section</p>
-                    
-                    <br>
-
-                    <ul class="report-template">
-                        <li>Title - Short and descriptive.</li>
-                        <li>Description - Detailed explanation of the issue.</li>
-                        <li>Steps to Reproduce - Step-by-step guide to reproduce the bug.</li>
-                        <li>Expected Behavior - What you expected to happen.</li>
-                        <li>Actual Behavior - What actually happened.</li>
-                        <li>Screenshots - If applicable.</li>
-                    </ul>
-                </div>
+                <h2>Submit a Bug</h2>
+                <form id="email-template" action="">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+                    <label for="description">Description</label>
+                    <textarea id="description" sname="description" rows="4" cols="50"></textarea>
+                    <button type="submit" id="submit">send</button>
+                </form>
             </main>
         </div>
         
